@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab Assignment 1 - Test Page</title>
+
+<link rel="stylesheet" href="CSS_Advanced_Selectors_Solution.css">
+<style>
+  
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 24px auto; padding: 0 16px; }
+  h2 { margin-top: 36px; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<h2>Problem 1: External links</h2>
+<nav class="links">
+  <a href="/about">About Us</a>
+  <a href="https://example.com/blog">Blog</a>
+  <a href="https://partner.org/docs">Docs</a>
+  <a href="/contact">Contact</a>
+</nav>
+
+<h2>Problem 2: Promo code hint (click inside the box, then click outside)</h2>
+<div class="field">
+  <label for="code">Promo Code:</label>
+  <input type="text" id="code" required pattern="[A-Z]{4}">
+  <p class="hint">Must be exactly 4 uppercase letters.</p>
+</div>
+
+<h2>Problem 3: Pricing dividers</h2>
+<ul class="pricing-list">
+  <li>Free Tier - $0</li>
+  <li>Starter Tier - $12</li>
+  <li>Pro Tier - $29</li>
+  <li>Enterprise Tier - Custom</li>
+</ul>
+
+<h2>Problem 4: Accordion marker</h2>
+<div class="accordion-item">
+  <label>
+    <input type="checkbox">
+    <span class="title">Toggle Section</span>
+  </label>
+  <div class="drawer">Content goes here...</div>
+</div>
+
+<h2>Problem 5: Checkout wizard</h2>
+<form class="checkout-wizard">
+  <!-- Step 1 -->
+  <fieldset class="step">
+    <legend>Account</legend>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="name@example.com">
+      <span class="error-msg">Please provide a valid email.</span>
+    </div>
+  </fieldset>
+  <!-- Step 2 -->
+  <fieldset class="step">
+    <legend>Delivery</legend>
+    <div class="field">
+      <label for="address">Address</label>
+      <input type="text" id="address" required placeholder="Street address">
+      <span class="error-msg">Address is required.</span>
+    </div>
+  </fieldset>
+  <!-- Step 3 -->
+  <fieldset class="step">
+    <legend>Review &amp; Confirm</legend>
+    <div class="field">
+      <label>
+        <input type="checkbox" id="terms" required>
+        I accept the terms
+      </label>
+      <span class="error-msg">You must accept the terms.</span>
+    </div>
+  </fieldset>
+</form>
+
+<h2>Problem 6: Directory tree</h2>
+<ul class="directory-tree">
+  <li data-type="folder">
+    <a href="#documents">Documents</a>
+    <ul>
+      <li data-type="file" data-ext="pdf"><a href="#doc1.pdf">Resume.pdf</a></li>
+      <li data-type="folder">
+        <a href="#archives">Archives</a>
+        <ul>
+          <li data-type="file" data-ext="zip"><a href="#backup.zip">Backup_2026.zip</a></li>
+        </ul>
+      </li>
+      <li data-type="file" data-ext="png"><a href="#preview.png">Signature.png</a></li>
+    </ul>
+  </li>
+  <li data-type="folder">
+    <a href="#media">Media</a>
+    <ul></ul> <!-- Empty folder -->
+  </li>
+  <li data-type="file" data-ext="txt">
+    <a href="#notes.txt">ReadMe.txt</a>
+  </li>
+</ul>
+
+</body>
+</html>

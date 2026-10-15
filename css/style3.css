@@ -1,0 +1,28 @@
+p { 
+      border-style : outset;
+      border-width : 5px;
+      border-color : grey;
+      border-radius  : 10px;
+      padding : 5px;
+
+
+}
+
+
+
+
+h1{
+
+border-top-style : dotted;
+border-bottom-style : solid;
+border-width : 5px;
+border-left-style : solid;
+border-right-style : solid;
+
+
+
+
+
+}
+
+

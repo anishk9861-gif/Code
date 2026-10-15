@@ -1,0 +1,9 @@
+Part of loops 
+These questions will clear concepts 
+
+
+
+We will use nested loops 
+
+square rectangle : 1-5
+traingle : 6-

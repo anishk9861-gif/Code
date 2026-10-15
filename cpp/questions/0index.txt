@@ -1,0 +1,7 @@
+QUESTION 1 - 3 : CONDITIONALS 
+
+QUESTION 4 - 18 : LOOPS
+
+question 19 - 21 : functions
+
+question 22 - 27 : arrays

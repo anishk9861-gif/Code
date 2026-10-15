@@ -1,0 +1,137 @@
+.links a[href^="https://"]::after {
+  content: " ↗";
+  font-size: 0.85em;
+}
+
+.hint {
+  display: none;
+}
+
+.field input:invalid:focus + .hint {
+  display: block;
+  color: red;
+}
+
+.pricing-list li + li {
+  border-top: 1px solid #ccc;
+}
+
+.accordion-item .title::before {
+  content: "[+] ";
+}
+
+.accordion-item input:checked + .title::before {
+  content: "[-] ";
+}
+
+.checkout-wizard {
+  counter-reset: wizard-step;
+}
+
+.step {
+  counter-increment: wizard-step;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+}
+
+input:is([type="text"], [type="email"]):invalid:not(:focus):not(:placeholder-shown) ~ .error-msg {
+  display: block;
+}
+
+.field:has(input[type="checkbox"]:invalid:not(:focus)) .error-msg {
+  display: block;
+}
+
+legend::before {
+  content: "Step " counter(wizard-step) ": ";
+}
+
+.step:has(input:invalid) legend::before {
+  color: #d32f2f;
+}
+
+.step:not(:has(input:invalid)) legend::before {
+  color: green;
+}
+
+.step:not(:has(input:invalid)) legend::after {
+  content: " (Complete)";
+}
+
+.step ~ .step {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.step:first-child:not(:has(input:invalid)) + .step,
+.step:first-child:not(:has(input:invalid)) + .step:not(:has(input:invalid)) + .step {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.directory-tree,
+.directory-tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.directory-tree li {
+  position: relative;
+  padding-left: 16px;
+  line-height: 24px;
+}
+
+.directory-tree li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #bbb;
+}
+
+.directory-tree li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 10px;
+  height: 1px;
+  background-color: #bbb;
+}
+
+.directory-tree li:last-child::before {
+  height: 12px;
+}
+
+li[data-type="folder"]:has(> ul:empty) > a::after {
+  content: " [Empty]";
+}
+
+.directory-tree ul ul li[data-type="file"] > a {
+  font-style: italic;
+  color: #d97706;
+}
+
+li[data-type="file"] + li[data-type="file"] {
+  margin-top: 2px;
+}
+
+li[data-type="folder"] + li[data-type="file"] {
+  border-top: 1px dashed #ccc;
+  padding-top: 6px;
+  margin-top: 10px;
+}
+
+li[data-type="folder"] + li[data-type="file"]::after {
+  top: 18px;
+}
+
+li[data-type="folder"] + li[data-type="file"]:last-child::before {
+  height: 18px;
+}

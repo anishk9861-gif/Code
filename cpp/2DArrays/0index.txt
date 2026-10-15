@@ -1,0 +1,7 @@
+2D arrays 
+
+Basicaaly a Table 
+We can make a table with help of 2D array.
+
+1D array have one dimension
+2D array have two dimensions 

@@ -1,0 +1,27 @@
+why we use functions : 
+
+ to not repeat ourself 
+ it helps to avoid repetetion.
+ to tackle repetetion
+ there are certain points of code that we use a lot of times in problem.
+
+
+
+
+basic details:
+
+main() -> This function can only be called once . we cant use it twice or more.
+
+return; -> keyword jis se function khtm ho jata hai
+           kind of like break;
+
+
+
+
+
+A compiler always starts with main()    
+
+
+question - 5
+
+

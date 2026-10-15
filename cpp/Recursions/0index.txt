@@ -1,0 +1,4 @@
+It basically means a function calling itself.
+
+1. Repetetion
+2. Infinite loop

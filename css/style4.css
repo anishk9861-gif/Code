@@ -1,0 +1,21 @@
+
+
+
+ h1{  
+    background: linear-gradient(to bottom,orange,pink);
+    background-repeat: no-repeat;
+    
+ }
+
+
+
+ body{
+
+    background-image: url("moth.jpg");
+    background-repeat: no-repeat;
+    background-attachment :fixed;
+    background-size : cover;
+    background-position : center;
+}
+
+
