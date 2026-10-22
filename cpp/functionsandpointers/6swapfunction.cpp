@@ -44,8 +44,6 @@ void swap(int* a,int* b){
     int temp = *a;
     *a = *b;
     *b = temp;
-   
-
 }
 
 int main(){
@@ -56,6 +54,8 @@ int main(){
     cout<<x<<" "<<y<<endl;
 
 }
+
+
 
 //ana chahaiye , even if tough 
 

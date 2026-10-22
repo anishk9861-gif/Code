@@ -14,3 +14,16 @@ syntax -- int arr[3][4];
 
 
 
+
+
+2. DSA 
+time & space complexity 
+sorting , searching 
+linker list , stack , queue , trees , maps , sets , heaps 
+graphs , dp , oops\
+
+
+
+
+
+

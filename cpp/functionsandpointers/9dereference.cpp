@@ -9,3 +9,5 @@ int main(){
     *ptr = 7;   // x=7
     cout<<x<<endl;
 }
+
+
