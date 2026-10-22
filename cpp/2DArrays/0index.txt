@@ -5,3 +5,12 @@ We can make a table with help of 2D array.
 
 1D array have one dimension
 2D array have two dimensions 
+
+
+syntax -- int arr[3][4];
+
+3 -> number of rows
+4 -> number of columns
+
+
+
