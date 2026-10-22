@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
   
     void solve() {
        vector<int> v;
@@ -10,7 +9,7 @@ int main(){
 
         v.push_back(x);
        }
-
+       int n;
        int h = v.size();
        for( int i = 0; i<v.size();i++){
         v[i]+=n;
@@ -32,4 +31,3 @@ int main(){
             solve();
         }
     }
-}
